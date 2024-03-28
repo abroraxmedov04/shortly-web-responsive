@@ -1,3 +1,184 @@
 @import "../base/fonts";
 @import "../utils/variables";
 @import "../base/general";
+@import "../utils/mixins";
+
+.site-header {
+  background-color: $main-white-color;
+
+  &__inner-wrapper {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    padding-block: 40px;
+    padding-inline: 24px;
+    position: absolute;
+    top: 100%;
+    background-color: $main-secondary-color;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    display: none;
+    width: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    &__item {
+      list-style-type: none;
+    }
+
+    &__link {
+      text-decoration-line: none;
+      color: $main-white-color;
+      font-family: $poppins-700, "Arial", sans-serif;
+    }
+  }
+
+  &__nav-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $main-fourth-color;
+    margin-top: 30px;
+  }
+
+  &__buttons {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    .nav__login {
+      text-decoration: none;
+      font-family: $poppins-700;
+      color: $main-white-color;
+    }
+
+    .nav__sign-up {
+      padding-block: 12px;
+      display: block;
+      padding-inline: 104px;
+      max-width: 279px;
+      width: 100%;
+      border-radius: 20px;
+      border: transparent;
+      background-color: $main-light-green-color;
+      font-family: $poppins-700;
+      color: $main-white-color;
+    }
+  }
+}
+
+.site-header__menu-btn {
+  background-image: url("../../assets/images/Group.svg");
+  padding: 1rem;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: transparent;
+  background-color: transparent;
+}
+
+.show {
+  display: block;
+}
+
+.unscroll {
+  overflow: hidden;
+}
+
+// media
+
+@media only screen and (min-width: 700px) {
+  .container {
+    padding-inline: 20px;
+  }
+
+  .site-header__menu-btn {
+    display: none;
+  }
+
+  .site-header {
+    &__inner-wrapper {
+      gap: 45px;
+      align-items: center;
+    }
+
+    .site-header__logo{
+        display: block;
+    }
+
+    &__navigation {
+      padding-block: 0;
+      padding-inline: 0;
+      position: static;
+      background-color: transparent;
+      border-radius: 0;
+      display: block;
+    }
+
+    &__nav {
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    .navbar {
+      flex-direction: row;
+
+      &__link {
+        color: $main-fourth-color;
+        transition: 0.4s;
+        &:hover {
+          color: $main-first-color;
+        }
+      }
+    }
+
+    &__nav-line {
+      display: none;
+    }
+
+    &__buttons {
+      margin-top: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 37px;
+
+      .nav__login {
+        text-decoration: none;
+        font-family: $poppins-700;
+        color: $main-fourth-color;
+        transition: 0.4s;
+
+        &:hover{
+            color: $main-first-color;
+        }
+      }
+
+      .nav__sign-up {
+        width: 105px;
+        padding-inline: 0px;
+      }
+    }
+  }
+}

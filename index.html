@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Shortly</title>
-  </head>
-  <body>
-    <header class="site-heder">
-      <div class="container">
-        <div class="header-site__inner-wrapper">
-          <div class="site-header__content">
-            
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Shortly</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner-wrapper">
+        <a href="./index.html" class="site-header__logo">
+          <img class="header-logo" width="120" height="32" src="./assets/images/logo.png" alt="header-logo-image" />
+        </a>
+
+        <button class="site-header__menu-btn" id="menu"></button>
+
+        <div class="site-header__navigation">
+          <nav class="site-header__nav">
+            <ul class="site-header__list navbar">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link"> Features </a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Pricing</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Resources</a>
+              </li>
+            </ul>
+            <span class="site-header__nav-line"></span>
+            <div class="site-header__buttons">
+              <a class="nav__login" href="index.html">Login</a>
+              <button class="nav__sign-up">Sign Up</button>
+            </div>
+          </nav>
         </div>
       </div>
-    </header>
-    <script src="./js/main.js"></script>
-  </body>
+    </div>
+  </header>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
