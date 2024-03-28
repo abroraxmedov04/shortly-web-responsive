@@ -10,9 +10,7 @@
     position: relative;
     padding-top: 40px;
     padding-bottom: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-box(flex, space-between, center);
   }
 
   &__navigation {
@@ -29,17 +27,14 @@
   }
 
   &__nav {
-    display: flex;
+    @include flex-box(flex, space-between, center);
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
   }
 
   .navbar {
     width: 100%;
-    display: flex;
+    @include flex-box(flex, start, center);
     flex-direction: column;
-    align-items: center;
     gap: 30px;
     &__item {
       list-style-type: none;
@@ -61,10 +56,9 @@
   }
 
   &__buttons {
+    @include flex-box(flex, start, center);
     margin-top: 32px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 24px;
 
     .nav__login {
@@ -123,8 +117,8 @@
       align-items: center;
     }
 
-    .site-header__logo{
-        display: block;
+    .site-header__logo {
+      display: block;
     }
 
     &__navigation {
@@ -159,7 +153,6 @@
 
     &__buttons {
       margin-top: 0;
-      display: flex;
       flex-direction: row;
       align-items: center;
       gap: 37px;
@@ -170,8 +163,8 @@
         color: $main-fourth-color;
         transition: 0.4s;
 
-        &:hover{
-            color: $main-first-color;
+        &:hover {
+          color: $main-first-color;
         }
       }
 
