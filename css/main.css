@@ -743,3 +743,117 @@ body {
     margin-inline: 0;
   }
 }
+@font-face {
+  font-family: "Poppins-500";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-500";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1158px;
+  width: 100%;
+  padding-inline: 24px;
+  margin-inline: auto;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins-500", "Arial", sans-serif;
+}
+
+.input-field {
+  background-color: #eff1f7;
+}
+.input-field .input-field__inner-wrapper {
+  background-image: url("../../assets/images/form-input-bg.png");
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+  transform: translateY(-50%);
+}
+@media only screen and (min-width: 768px) {
+  .input-field .input-field__inner-wrapper {
+    background-image: url("../../assets/images/form-desktop-bg.png");
+    padding: 0;
+    padding-block: 52px;
+    padding-inline: 64px;
+    transform: translateY(-30%);
+  }
+}
+.input-field .form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .input-field .form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.input-field .form__input {
+  padding: 11px 16px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .input-field .form__input {
+    padding: 14px 16px;
+    width: 100%;
+  }
+}
+.input-field .form__btn {
+  background-color: #2bd0d0;
+  padding: 11px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+  font-family: "Poppins-700", "Arial", sans-serif;
+}
+@media only screen and (min-width: 768px) {
+  .input-field .form__btn {
+    max-width: 188px;
+    width: 100%;
+    padding: 14px;
+  }
+}

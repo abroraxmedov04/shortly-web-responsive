@@ -1,0 +1,69 @@
+@import "../base/fonts";
+@import "../utils/variables";
+@import "../base/general";
+@import "../utils/mixins";
+
+.input-field {
+  background-color: $main-white-color-bg;
+
+  .input-field__inner-wrapper {
+    background-image: url("../../assets/images/form-input-bg.png");
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    padding: 24px;
+    transform: translateY(-50%);
+
+    @media only screen and (min-width: 768px) {
+      background-image: url("../../assets/images/form-desktop-bg.png");
+      padding: 0;
+      padding-block: 52px;
+      padding-inline: 64px;
+      transform: translateY(-30%);
+    }
+  }
+
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__input {
+      padding: 11px 16px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      outline: none;
+      // border: 2px solid $input-border-incorrect;
+      width: 100%;
+
+      @media only screen and (min-width: 768px) {
+        padding: 14px 16px;
+        width: 100%;
+      }
+    }
+
+    &__btn {
+      background-color: $main-light-green-color;
+      padding: 11px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      color: $main-white-color;
+      font-family: $poppins-700, "Arial", sans-serif;
+
+      @media only screen and (min-width: 768px) {
+        max-width: 188px;
+        width: 100%;
+        padding: 14px;
+      }
+    }
+  }
+}
