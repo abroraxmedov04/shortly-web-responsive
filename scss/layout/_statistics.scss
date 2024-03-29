@@ -1,0 +1,122 @@
+.statistics {
+  background-color: $main-white-color-bg;
+  height: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 450px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 18px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    color: $main-fourth-color;
+    line-height: 28px;
+
+    @media only screen and (min-width: 768px) {
+      max-width: 540px;
+      width: 100%;
+      margin-inline: auto;
+    }
+  }
+
+  &__card-wrapper {
+    padding-top: 96px;
+  }
+
+  &__cards-wr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+
+    @media only screen and (min-width: 576px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+
+  &__card {
+    border-radius: 5px;
+    background-color: $main-white-color;
+    padding-bottom: 41px;
+    padding-inline: 32px;
+
+    @media only screen and (min-width: 768px) {
+      max-width: 350px;
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 576px) and (max-width: 768px) {
+      &:last-child {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .card-1 {
+      position: absolute;
+      left: 0;
+    }
+
+    .card-2 {
+      position: absolute;
+      left: 380px;
+      top: 45px;
+      z-index: 100;
+    }
+
+    .card-3 {
+      position: absolute;
+      right: 0;
+      top: 85px;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-inline: auto;
+    transform: translateY(-50%);
+
+    @media only screen and (min-width: 576px) {
+      margin-inline: 0;
+    }
+  }
+
+  &__card-title {
+    text-align: center;
+    font-size: 22px;
+    line-height: 33px;
+    color: $main-first-color;
+    margin-bottom: 12px;
+
+    @media only screen and (min-width: 576px) {
+      text-align: start;
+    }
+  }
+
+  &__card-desc {
+    color: $main-fourth-color;
+    text-align: center;
+
+    @media only screen and (min-width: 576px) {
+      text-align: start;
+    }
+  }
+}

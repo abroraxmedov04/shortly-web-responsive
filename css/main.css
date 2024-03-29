@@ -389,55 +389,8 @@ body {
   font-family: "Poppins-500", "Arial", sans-serif;
 }
 
-@font-face {
-  font-family: "Poppins-500";
-  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins-700";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins-500";
-  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins-700";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1158px;
-  width: 100%;
-  padding-inline: 24px;
-  margin-inline: auto;
-}
-
-img {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins-500", "Arial", sans-serif;
+ul, li {
+  list-style-type: none;
 }
 
 .site-header {
@@ -598,57 +551,6 @@ body {
     padding-inline: 0px;
   }
 }
-@font-face {
-  font-family: "Poppins-500";
-  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins-700";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins-500";
-  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins-700";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1158px;
-  width: 100%;
-  padding-inline: 24px;
-  margin-inline: auto;
-}
-
-img {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins-500", "Arial", sans-serif;
-}
-
 .hero__inner-wrapper {
   display: flex;
   justify-content: space-between;
@@ -743,57 +645,6 @@ body {
     margin-inline: 0;
   }
 }
-@font-face {
-  font-family: "Poppins-500";
-  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins-700";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins-500";
-  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins-700";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1158px;
-  width: 100%;
-  padding-inline: 24px;
-  margin-inline: auto;
-}
-
-img {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins-500", "Arial", sans-serif;
-}
-
 .input-field {
   background-color: #eff1f7;
 }
@@ -855,5 +706,124 @@ body {
     max-width: 188px;
     width: 100%;
     padding: 14px;
+  }
+}
+
+.statistics {
+  background-color: #eff1f7;
+  height: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media only screen and (min-width: 768px) {
+  .statistics {
+    padding-top: 120px;
+    padding-bottom: 450px;
+  }
+}
+.statistics__title {
+  text-align: center;
+  font-size: 28px;
+  line-height: 48px;
+  margin-bottom: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .statistics__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.statistics__description {
+  text-align: center;
+  color: #9e9aa8;
+  line-height: 28px;
+}
+@media only screen and (min-width: 768px) {
+  .statistics__description {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+.statistics__card-wrapper {
+  padding-top: 96px;
+}
+.statistics__cards-wr {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+@media only screen and (min-width: 576px) {
+  .statistics__cards-wr {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+.statistics__card {
+  border-radius: 5px;
+  background-color: white;
+  padding-bottom: 41px;
+  padding-inline: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .statistics__card {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .statistics__card:last-child {
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .statistics .card-1 {
+    position: absolute;
+    left: 0;
+  }
+  .statistics .card-2 {
+    position: absolute;
+    left: 380px;
+    top: 45px;
+    z-index: 100;
+  }
+  .statistics .card-3 {
+    position: absolute;
+    right: 0;
+    top: 85px;
+  }
+}
+.statistics__image {
+  display: block;
+  margin-inline: auto;
+  transform: translateY(-50%);
+}
+@media only screen and (min-width: 576px) {
+  .statistics__image {
+    margin-inline: 0;
+  }
+}
+.statistics__card-title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 33px;
+  color: #34313d;
+  margin-bottom: 12px;
+}
+@media only screen and (min-width: 576px) {
+  .statistics__card-title {
+    text-align: start;
+  }
+}
+.statistics__card-desc {
+  color: #9e9aa8;
+  text-align: center;
+}
+@media only screen and (min-width: 576px) {
+  .statistics__card-desc {
+    text-align: start;
   }
 }
