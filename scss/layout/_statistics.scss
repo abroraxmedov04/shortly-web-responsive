@@ -1,4 +1,5 @@
 .statistics {
+  position: relative;
   background-color: $main-white-color-bg;
   height: 100%;
   padding-top: 120px;
@@ -118,5 +119,19 @@
     @media only screen and (min-width: 576px) {
       text-align: start;
     }
+  }
+}
+
+.line {
+  position: absolute;
+  background-color: $main-light-green-color;
+  height: 8px;
+  width: 800px;
+  top: 900px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+
+  @media screen and (min-width: 400px) {
+    display: none;
   }
 }

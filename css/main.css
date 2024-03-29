@@ -710,6 +710,7 @@ ul, li {
 }
 
 .statistics {
+  position: relative;
   background-color: #eff1f7;
   height: 100%;
   padding-top: 120px;
@@ -825,5 +826,20 @@ ul, li {
 @media only screen and (min-width: 576px) {
   .statistics__card-desc {
     text-align: start;
+  }
+}
+
+.line {
+  position: absolute;
+  background-color: #2bd0d0;
+  height: 8px;
+  width: 800px;
+  top: 900px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+@media screen and (min-width: 400px) {
+  .line {
+    display: none;
   }
 }
