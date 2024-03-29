@@ -3,3 +3,19 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin flex-block-complex(
+  $flex-type,
+  $content,
+  $align,
+  $direction,
+  $space,
+  $position
+) {
+  display: $flex-type;
+  justify-content: $content;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $space;
+  position: $position;
+}
